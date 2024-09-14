@@ -49,10 +49,12 @@ body, ul, li, p, a, label, input, div {
     font-size: 22px !important;
 }
 /* General */
+.navbar-dorado {background-color:gold !important;}
 .logo { font-weight: 500 !important;}
 .text-warning {  color: #ede861 !important;}
 .text-muted { color: #bcbcbc !important;}
 .text-success { color: #59ab6e !important;}
+.text-rojo {color:#f71515 !important;}
 .text-light { color: #cfd6e1 !important;}
 .bg-dark { background-color: #212934 !important;}
 .bg-light { background-color: #e9eef5 !important;}
