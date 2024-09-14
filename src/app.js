@@ -74,6 +74,11 @@ app.get('/index', (req, res) => {
     else res.render('index');
 });
 
+app.get('/turnos', (req, res) => {
+    if(req.session.loggedin) res.render('turnos', { username: req.session.username });
+    else res.render('turnos');
+});
+
 // Middleware para manejar errores 404 (Página no encontrada)
 app.use((req, res, next) => {
     res.status(404).render('404');
