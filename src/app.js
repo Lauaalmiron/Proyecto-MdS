@@ -55,19 +55,23 @@ app.get('/', (req, res) => {
 });
 
 app.get('/about', (req, res) => {
-    res.render('about');
+    if(req.session.loggedin) res.render('about', { username: req.session.username });
+    else res.render('about');
 });
 
 app.get('/contact', (req, res) => {
-    res.render('contact');
+    if(req.session.loggedin) res.render('contact', { username: req.session.username });
+    else res.render('contact');
 });
 
 app.get('/shop', (req, res) => {
-    res.render('shop');
+    if(req.session.loggedin) res.render('shop', { username: req.session.username });
+    else res.render('shop');
 });
 
 app.get('/index', (req, res) => {
-    res.render('index');
+    if(req.session.loggedin) res.render('index', { username: req.session.username });
+    else res.render('index');
 });
 
 // Middleware para manejar errores 404 (Página no encontrada)
