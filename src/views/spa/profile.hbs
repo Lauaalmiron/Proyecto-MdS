@@ -71,8 +71,9 @@
                                         {{#if this.pagado}}
                                             <a href="/cancelar-turno/{{this.turno_id}}" class="btn btn-danger">Cancelar</a>
                                         {{else}}
+                                            <a href="/crear-compra/{{this.turno_id}}" class="btn btn-success">Pagar</a>     
                                             <a href="/cancelar-turno/{{this.turno_id}}" class="btn btn-danger">Cancelar</a>
-                                            <a href="/crear-compra/{{this.turno_id}}" class="btn btn-success">Pagar</a>                                            
+                                                                                   
                                         {{/if}}
                                     </td>
                                 </tr>
