@@ -55,7 +55,7 @@ app.use((req, res, next) => {
         req.conn = mysql2.createConnection(AWS_DB);
     } else {
         console.log("Usando base de datos local para desarrollo.");
-        req.conn = mysql2.createConnection(AWS_DB);
+        req.conn = mysql2.createConnection(Local_DB);
     }
 
     req.conn.connect(function (err) {
